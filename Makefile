@@ -22,6 +22,7 @@ make.bat: Makefile
 
 %.gb:	%.o
 	$(CC) -o $@ $<
+	vba main.gb
 
 clean:
 	rm -f *.o *.lst *.map *.gb *~ *.rel *.cdb *.ihx *.lnk *.sym *.asm
